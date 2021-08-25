@@ -3,7 +3,7 @@ import React from 'react';
 import classes from './Form.module.scss';
 import InputField from './InputField';
 
-function LogInForm(props) {
+function SignInForm(props) {
   const [logInData, setLogInData] = useState({login: "", password: ""});
 
   const handleSubmit = e => {
@@ -24,16 +24,16 @@ function LogInForm(props) {
             className={classes.label}
           />)
       }
-
-      <button className={classes.button}>Войти</button>
+      
+      <button className={classes.button}>Регистрация</button>
       <div className={classes.subTittle}>
-        <span>У вас нет аккаунта? - </span> <a onClick={() => props.formToggle("registration")}>зарегистрируйтесь</a>
-      </div>   
+        <span>У вас уже есть аккаунт? - </span> <a onClick={() => props.formToggle("login")}>авторизируйтесь</a>
+      </div>
 
     </form>
   );
 };
 
-export default LogInForm;
+export default SignInForm;
 
 

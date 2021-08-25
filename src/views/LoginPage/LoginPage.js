@@ -1,4 +1,5 @@
 import { LogInForm as LogInForm } from '../../components';
+import { SignInForm as SignInForm } from '../../components';
 import classes from './LoginPage.module.scss';
 import {LOGIN_FORM, REGISTRATION_FORM} from '../../constants'
 import { useState } from 'react';
@@ -22,7 +23,11 @@ const LoginPage = () => {
 
   return (
     <div className={classes.wrapper}>
-      <LogInForm formSettings={formSettings} formToggle={formToggle} formType={formType}/>
+      {
+        formType == "login" ? 
+          <LogInForm formSettings={formSettings} formToggle={formToggle}/> : 
+          <SignInForm formSettings={formSettings} formToggle={formToggle}/>
+      }
     </div>
   );
 };

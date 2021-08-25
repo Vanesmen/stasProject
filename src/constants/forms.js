@@ -24,7 +24,7 @@ export const REGISTRATION_FORM = [
         type: "email",
         label: "Email",
         placeholder: "Введите email",
-        valueName: "password"
+        valueName: "email"
     },
     {
         type: "password",
@@ -36,6 +36,6 @@ export const REGISTRATION_FORM = [
         type: "password",
         label: "Подтверждение пароля",
         placeholder: "Подтвердить пароль",
-        valueName: "password"
+        valueName: "passwordRepeat"
     },
 ]
