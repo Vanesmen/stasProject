@@ -1,0 +1,58 @@
+$blue: rgb(19, 144, 229);
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 15px 20px;
+    border: 1px solid #f3ba76;
+    border-radius: 5px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 18px;
+}
+
+.label input {
+  background: #fff;
+  margin: 10px 0;
+  padding: 6px 10px;
+  border: unset;
+  border-bottom: 3px solid #f3ba76;
+  font-family: Montserrat, sans-serif;
+  outline: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.label input:hover {
+    border-bottom: 3px solid white;
+}
+
+.button {
+  padding: 7px 10px;
+  background: #f3ba76;
+  border: unset;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 5px;
+  color: #1e2532;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.subTittle {
+  color: #f3ba76;
+  margin-top: 8px;
+}
+
+.subTittle a {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
