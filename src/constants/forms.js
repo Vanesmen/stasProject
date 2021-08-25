@@ -1,3 +1,4 @@
+// valueName должен быть уникальным в рамках одной формы
 export const LOGIN_FORM = [
     {
         type: "text",

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import classes from './Sidebar.module.css';
+import classes from './Sidebar.module.scss';
 import classNames from 'classnames';
 
 

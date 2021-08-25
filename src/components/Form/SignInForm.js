@@ -4,7 +4,7 @@ import classes from './Form.module.scss';
 import InputField from './InputField';
 
 function SignInForm(props) {
-  const [logInData, setLogInData] = useState({login: "", password: ""});
+  const [logInData, setLogInData] = useState({login: "", email: "", password: "", passwordRepeat: ""});
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -21,10 +21,11 @@ function SignInForm(props) {
             placeholder={el.placeholder}
             value={logInData[el.valueName]}
             onChange={e => setLogInData({ ...logInData, [el.valueName]: e.target.value })}
+            key={el.valueName}
             className={classes.label}
           />)
       }
-      
+
       <button className={classes.button}>Регистрация</button>
       <div className={classes.subTittle}>
         <span>У вас уже есть аккаунт? - </span> <a onClick={() => props.formToggle("login")}>авторизируйтесь</a>

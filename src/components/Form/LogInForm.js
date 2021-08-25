@@ -20,6 +20,7 @@ function LogInForm(props) {
             label={el.label}
             placeholder={el.placeholder}
             value={logInData[el.valueName]}
+            key={el.valueName}
             onChange={e => setLogInData({ ...logInData, [el.valueName]: e.target.value })}
             className={classes.label}
           />)
