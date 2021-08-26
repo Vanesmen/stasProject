@@ -9,7 +9,7 @@ const Router = () => {
     <BrowserRouter>
       <Switch>
         <Route exact={true} path={PATHS.root} component={LoginPage} />
-        <Route exact={true} path={PATHS.user} component={AdminPage} />
+        <Route exact={true} path={PATHS.profile} component={AdminPage} />
 
         <Redirect to={PATHS.root} />
       </Switch>

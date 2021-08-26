@@ -22,4 +22,12 @@
   margin-left: auto;
   cursor: pointer;
   transition: 0.5s;
+  border: none;
+}
+
+.sidebar_btn:hover {
+  color: #fff;
+  background: #212121;
+  cursor: pointer;
+  transition: 0.5s;
 }
